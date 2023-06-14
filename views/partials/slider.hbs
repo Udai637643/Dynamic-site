@@ -1,0 +1,20 @@
+
+    <div class="slider">
+
+       {{#each slides}}
+         <div class="slide">
+            <img src="{{this.imageUrl}}" alt="">
+            <div class="caption" > <h2> {{this.title}} </h2>
+                 <p> {{this.subTitle}} </p>
+            </div>
+           
+        </div>
+{{/each}}
+      
+         <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+ 
+
+    </div>
+    <script src="script.js"></script>
+ 
